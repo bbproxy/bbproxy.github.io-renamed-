@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="style">
+	<head>
+		<!-- Shortcut & Favicon -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Script Code is required here for any of the jquery to work -->
+		<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+		<!-- Redirects Website at set content time -->
+		<meta http-equiv="refresh" content="9;URL='https://bbombproxy.github.io'">
+		<style>
+			p,h1.small {
+				line-height: 20%;
+			}
+			
+			p.big {
+				line-height: 200%;
+			}
+			body {
+				background-color: snow;
+			}
+			html.style {
+				cursor:wait;
+			}
+			button.na {
+				cursor:not-allowed;
+			}
+			/*
+			#fountainTextG{
+				width:270px;
+				margin:auto;
+			}
+			
+			.fountainTextG{
+				color:rgb(0,0,0);
+				font-family:Arial;
+				font-size:28px;
+				text-decoration:none;
+				font-weight:normal;
+				font-style:normal;
+				float:left;
+				text-align:center;
+				animation-name:bounce_fountainTextG;
+				-o-animation-name:bounce_fountainTextG;
+				-ms-animation-name:bounce_fountainTextG;
+				-webkit-animation-name:bounce_fountainTextG;
+				-moz-animation-name:bounce_fountainTextG;
+				animation-duration:1.641s;
+				-o-animation-duration:1.641s;
+				-ms-animation-duration:1.641s;
+				-webkit-animation-duration:1.641s;
+				-moz-animation-duration:1.641s;
+				animation-iteration-count:infinite;
+				-o-animation-iteration-count:infinite;
+				-ms-animation-iteration-count:infinite;
+				-webkit-animation-iteration-count:infinite;
+				-moz-animation-iteration-count:infinite;
+				animation-direction:normal;
+				-o-animation-direction:normal;
+				-ms-animation-direction:normal;
+				-webkit-animation-direction:normal;
+				-moz-animation-direction:normal;
+				transform:scale(.5);
+				-o-transform:scale(.5);
+				-ms-transform:scale(.5);
+				-webkit-transform:scale(.5);
+				-moz-transform:scale(.5);
+			}
+			#fountainTextG_1{
+				animation-delay:0.5825s;
+				-o-animation-delay:0.5825s;
+				-ms-animation-delay:0.5825s;
+				-webkit-animation-delay:0.5825s;
+				-moz-animation-delay:0.5825s;
+			}
+			#fountainTextG_2{
+				animation-delay:0.699s;
+				-o-animation-delay:0.699s;
+				-ms-animation-delay:0.699s;
+				-webkit-animation-delay:0.699s;
+				-moz-animation-delay:0.699s;
+			}
+			#fountainTextG_3{
+				animation-delay:0.8155s;
+				-o-animation-delay:0.8155s;
+				-ms-animation-delay:0.8155s;
+				-webkit-animation-delay:0.8155s;
+				-moz-animation-delay:0.8155s;
+			}
+			
+			
+			
+			
+			@keyframes bounce_fountainTextG{
+				
+				0%{
+					transform:scale(1);
+					color:rgb(0,0,0);
+				}
+				
+				100%{
+					transform:scale(.5);
+					color:rgb(255,255,255);
+				}
+			}
+			
+			@-o-keyframes bounce_fountainTextG{
+				0%{
+					-o-transform:scale(1);
+					color:rgb(0,0,0);
+				}
+				100%{
+					-o-transform:scale(.5);
+					color:rgb(255,255,255);
+				}
+			}
+      
+			@-ms-keyframes bounce_fountainTextG{
+				0%{
+					-ms-transform:scale(1);
+					color:rgb(0,0,0);
+				}
+				100%{
+					-ms-transform:scale(.5);
+					color:rgb(255,255,255);
+				}
+			}
+			
+			@-webkit-keyframes bounce_fountainTextG{
+				0%{
+					-webkit-transform:scale(1);
+					color:rgb(0,0,0);
+				}
+				100%{
+					-webkit-transform:scale(.5);
+					color:rgb(255,255,255);
+				}
+			}
+			
+			@-moz-keyframes bounce_fountainTextG{
+				0%{
+					-moz-transform:scale(1);
+					color:rgb(0,0,0);
+				}
+				100%{
+					-moz-transform:scale(.5);
+					color:rgb(255,255,255);
+				}
+			}
+			*/
+			body {
+				align-items: center;
+			}
+		</style>
+		<script>
+			$(document).ready(function() {
+				
+				// Function to update counters on all elements with class counter
+				var doUpdate = function() {
+					$('.countdown').each(function() {
+						var count = parseInt($(this).html());
+						if (count !== 0) {
+							$(this).html(count - 1);
+						}
+						// Delays the reload process after countdown reaches 0
+						setTimeout(function(){
+							$( "#countdown" ).remove();
+						}, 8000);
+					});
+				};
+				
+				// Schedule the update to happen once every second for the countdown
+				setInterval(doUpdate, 1000);
+			});
+			setTimeout(function(){
+				// Removes the countdown buttons disabled attribute after countdown
+				$('#countdown-button').removeAttr('disabled');
+				// Adds the words Click Here to the button after countdown
+				$('#countdown-button').text('Click Here');
+				// Changes the buttons link after countdown
+				$("#countdown-button-link").attr("href", "https://bbombproxy.github.io");
+				// Removes the class style in html tag after countdown
+				$( "html" ).removeClass( "style" );
+				// Removes the class cursor in button after the countdown
+				$( "button" ).removeClass( "na" );
+			}, 7000);
+			// Adds a button to the page using jquery
+			/* setTimeout(function(){
+			$("button").append("<button href='https://bbproxy.github.io' class='clear'>Click Here</button>");
+			}, 6000); */
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1 class="small">Error 301</h1>
+			<p class="small">This site has been Moved Permanently</p>
+			<img src="loader.gif" alt="Loader" style="width:128px;height:128px;">
+			<!--<p class="small"><div style="word-wrap: none; font-size: 13px;" id="fountainTextG">Redirecting to the new BannerBombProxy<div id="fountainTextG_1" class="fountainTextG">.</div><div id="fountainTextG_2" class="fountainTextG">.</div><div id="fountainTextG_3" class="fountainTextG">.</div></div></p>-->
+			<p class="small"><div style="word-wrap: none; font-size: 13px;" id="">Redirecting to the new BannerBombProxy</p>
+		<br>
+		<p class="small">If you are not automatically redirected <a href="javascript:;" id="countdown-button-link"><button id="countdown-button" class="na" disabled><div class="countdown" id="countdown" style="width: 60px;">6</div></button></a></p>
+		</center>
+	</body>
+</html>
